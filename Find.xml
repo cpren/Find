@@ -7,6 +7,19 @@
       </block>
     </value>
     <statement name="DO">
+      <block type="movement_forward" id="394">
+        <next>
+          <block type="robot_delay" id="395" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="396">
+                <field name="NUM">100</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <next>
       <block type="controls_if" id="236" inline="false">
         <value name="IF0">
           <block type="sensor_object" id="221">
@@ -80,19 +93,6 @@
                 </next>
               </block>
             </statement>
-          </block>
-        </next>
-      </block>
-    </statement>
-    <next>
-      <block type="movement_forward" id="394">
-        <next>
-          <block type="robot_delay" id="395" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="396">
-                <field name="NUM">100</field>
-              </block>
-            </value>
           </block>
         </next>
       </block>
