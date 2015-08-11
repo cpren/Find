@@ -7,7 +7,7 @@
             <field name="OBJECT">UP</field>
           </block>
         </value>
-        <statement name="DO0">
+        <next>
           <block type="movement_forward" id="638">
             <next>
               <block type="robot_delay" id="649" inline="true">
@@ -19,7 +19,7 @@
               </block>
             </next>
           </block>
-        </statement>
+        </next>
       </block>
     </next>
   </block>
