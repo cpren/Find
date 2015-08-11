@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="198" inline="false" x="-60" y="26">
+  <block type="controls_whileUntil" id="198" inline="false" x="-98" y="-701">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_spectrometer" id="205">
@@ -15,61 +15,61 @@
                 <field name="NUM">100</field>
               </block>
             </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <next>
+      <block type="controls_if" id="236" inline="false">
+        <value name="IF0">
+          <block type="sensor_object" id="221">
+            <field name="OBJECT">LEFTFRONT</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_reverse" id="262">
             <next>
-              <block type="controls_if" id="236" inline="false">
-                <value name="IF0">
-                  <block type="sensor_object" id="221">
-                    <field name="OBJECT">LEFTFRONT</field>
-                  </block>
-                </value>
-                <statement name="DO0">
-                  <block type="movement_reverse" id="262">
-                    <next>
-                      <block type="movement_right" id="282">
-                        <next>
-                          <block type="robot_delay" id="311" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="319">
-                                <field name="NUM">1000</field>
-                              </block>
-                            </value>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </statement>
+              <block type="movement_right" id="282">
                 <next>
-                  <block type="controls_if" id="252" inline="false">
-                    <value name="IF0">
-                      <block type="sensor_object" id="228">
-                        <field name="OBJECT">RIGHTFRONT</field>
+                  <block type="robot_delay" id="311" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="319">
+                        <field name="NUM">1000</field>
                       </block>
                     </value>
-                    <statement name="DO0">
-                      <block type="movement_reverse" id="272">
-                        <next>
-                          <block type="movement_left" id="309">
-                            <next>
-                              <block type="robot_delay" id="312" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="320">
-                                    <field name="NUM">1000</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </statement>
                   </block>
                 </next>
               </block>
             </next>
           </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="252" inline="false">
+            <value name="IF0">
+              <block type="sensor_object" id="228">
+                <field name="OBJECT">RIGHTFRONT</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="movement_reverse" id="272">
+                <next>
+                  <block type="movement_left" id="309">
+                    <next>
+                      <block type="robot_delay" id="312" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="320">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
         </next>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
