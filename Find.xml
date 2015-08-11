@@ -8,17 +8,7 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_forward" id="638">
-            <next>
-              <block type="robot_delay" id="649" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="656">
-                    <field name="NUM">1000</field>
-                  </block>
-                </value>
-              </block>
-            </next>
-          </block>
+          <block type="movement_forward" id="638"></block>
         </statement>
       </block>
     </next>
