@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="722" x="-163" y="-488">
+  <block type="oled_cleardisplay" id="722" x="-167" y="-520">
     <next>
       <block type="controls_if" id="628" inline="false">
         <value name="IF0">
@@ -23,6 +23,31 @@
             </next>
           </block>
         </statement>
+        <next>
+          <block type="controls_if" id="1246" inline="false">
+            <value name="IF0">
+              <block type="sensor_button" id="1247">
+                <field name="OBJECT">DOWN</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="movement_reverse" id="1261">
+                <next>
+                  <block type="robot_delay" id="1249" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="1250">
+                        <field name="NUM">100</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="movement_reverse" id="1271"></block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
       </block>
     </next>
   </block>
