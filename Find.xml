@@ -1,14 +1,14 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="198" inline="false" x="-33" y="30">
-    <field name="MODE">UNTIL</field>
-    <value name="NUMBER">
-      <block type="sensor_spectrometer" id="205">
-        <field name="LIGHT">BLUE</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_forward" id="330">
-        <next>
+  <block type="movement_forward" id="330" x="-31" y="7">
+    <next>
+      <block type="controls_whileUntil" id="198" inline="false">
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="sensor_spectrometer" id="205">
+            <field name="LIGHT">BLUE</field>
+          </block>
+        </value>
+        <statement name="DO">
           <block type="robot_delay" id="332" inline="true">
             <value name="DELAY">
               <block type="math_number" id="333">
@@ -68,8 +68,8 @@
               </block>
             </next>
           </block>
-        </next>
+        </statement>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
