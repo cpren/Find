@@ -3,7 +3,7 @@
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_spectrometer" id="205">
-        <field name="LIGHT">BLUE</field>
+        <field name="LIGHT">YELLOW</field>
       </block>
     </value>
     <statement name="DO">
@@ -98,8 +98,12 @@
       </block>
     </statement>
     <next>
-      <block type="oled_drawtext" id="405">
-        <field name="TEXT">Found</field>
+      <block type="oled_cleardisplay" id="422">
+        <next>
+          <block type="oled_drawtext" id="405">
+            <field name="TEXT">Found</field>
+          </block>
+        </next>
       </block>
     </next>
   </block>
