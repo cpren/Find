@@ -1,19 +1,20 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="1618" inline="false" x="-902" y="-1049">
+  <block type="controls_whileUntil" id="1641" inline="false" x="-871" y="-1064">
     <field name="MODE">WHILE</field>
     <value name="NUMBER">
-      <block type="math_number" id="1625">
+      <block type="math_number" id="1648">
         <field name="NUM">1</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="controls_if" id="628" inline="false">
-        <value name="IF0">
+      <block type="controls_whileUntil" id="1618" inline="false">
+        <field name="MODE">WHILE</field>
+        <value name="NUMBER">
           <block type="sensor_button" id="621">
             <field name="OBJECT">UP</field>
           </block>
         </value>
-        <statement name="DO0">
+        <statement name="DO">
           <block type="movement_forward" id="638">
             <next>
               <block type="robot_delay" id="1153" inline="true">
@@ -27,13 +28,14 @@
           </block>
         </statement>
         <next>
-          <block type="controls_if" id="1246" inline="false">
-            <value name="IF0">
+          <block type="controls_whileUntil" id="1632" inline="false">
+            <field name="MODE">WHILE</field>
+            <value name="NUMBER">
               <block type="sensor_button" id="1247">
                 <field name="OBJECT">DOWN</field>
               </block>
             </value>
-            <statement name="DO0">
+            <statement name="DO">
               <block type="movement_reverse" id="1261">
                 <next>
                   <block type="robot_delay" id="1249" inline="true">
@@ -47,13 +49,14 @@
               </block>
             </statement>
             <next>
-              <block type="controls_if" id="1345" inline="false">
-                <value name="IF0">
+              <block type="controls_whileUntil" id="1633" inline="false">
+                <field name="MODE">WHILE</field>
+                <value name="NUMBER">
                   <block type="sensor_button" id="1346">
                     <field name="OBJECT">LEFT</field>
                   </block>
                 </value>
-                <statement name="DO0">
+                <statement name="DO">
                   <block type="movement_left" id="1360">
                     <next>
                       <block type="robot_delay" id="1348" inline="true">
@@ -67,13 +70,14 @@
                   </block>
                 </statement>
                 <next>
-                  <block type="controls_if" id="1371" inline="false">
-                    <value name="IF0">
+                  <block type="controls_whileUntil" id="1634" inline="false">
+                    <field name="MODE">WHILE</field>
+                    <value name="NUMBER">
                       <block type="sensor_button" id="1372">
                         <field name="OBJECT">RIGHT</field>
                       </block>
                     </value>
-                    <statement name="DO0">
+                    <statement name="DO">
                       <block type="movement_right" id="1386">
                         <next>
                           <block type="robot_delay" id="1374" inline="true">
