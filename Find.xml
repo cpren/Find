@@ -6,7 +6,7 @@
         <field name="LIGHT">BLUE</field>
       </block>
     </value>
-    <statement name="DO">
+    <next>
       <block type="controls_if" id="236" inline="false">
         <value name="IF0">
           <block type="sensor_object" id="221">
@@ -83,6 +83,6 @@
           </block>
         </next>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
