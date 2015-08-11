@@ -16,6 +16,9 @@
                     <field name="NUM">100</field>
                   </block>
                 </value>
+                <next>
+                  <block type="movement_forward" id="1245"></block>
+                </next>
               </block>
             </next>
           </block>
