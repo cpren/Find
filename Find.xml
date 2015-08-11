@@ -8,35 +8,16 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="controls_repeat" id="950" inline="true">
-            <value name="TIMES">
-              <block type="logic_compare" id="994" inline="true">
-                <field name="OP">EQ</field>
-                <value name="A">
-                  <block type="math_number" id="995">
-                    <field name="NUM">1</field>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="math_number" id="996">
-                    <field name="NUM">1</field>
+          <block type="movement_forward" id="638">
+            <next>
+              <block type="robot_delay" id="649" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="656">
+                    <field name="NUM">1000</field>
                   </block>
                 </value>
               </block>
-            </value>
-            <statement name="DO">
-              <block type="movement_forward" id="638">
-                <next>
-                  <block type="robot_delay" id="649" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="656">
-                        <field name="NUM">1000</field>
-                      </block>
-                    </value>
-                  </block>
-                </next>
-              </block>
-            </statement>
+            </next>
           </block>
         </statement>
       </block>
