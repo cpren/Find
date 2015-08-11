@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="628" inline="false" x="-45" y="-345">
+  <block type="controls_if" id="628" inline="false" x="-112" y="-371">
     <value name="IF0">
       <block type="sensor_button" id="621">
         <field name="OBJECT">UP</field>
