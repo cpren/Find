@@ -1,52 +1,30 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="31" inline="false" x="-11" y="30">
-    <field name="MODE">UNTIL</field>
-    <value name="NUMBER">
-      <block type="sensor_spectrometer" id="45">
-        <field name="LIGHT">BLUE</field>
-      </block>
-    </value>
+  <block type="controls_repeat" id="184" inline="true" x="-43" y="-4">
     <statement name="DO">
-      <block type="movement_forward" id="114">
-        <next>
-          <block type="controls_if" id="7" inline="false">
-            <value name="IF0">
-              <block type="sensor_object" id="14">
-                <field name="OBJECT">LEFTFRONT</field>
-              </block>
-            </value>
-            <statement name="DO0">
-              <block type="movement_reverse" id="92">
-                <next>
-                  <block type="movement_right" id="24">
-                    <next>
-                      <block type="robot_delay" id="73" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="80">
-                            <field name="NUM">100</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </statement>
+      <block type="controls_whileUntil" id="31" inline="false">
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="sensor_spectrometer" id="45">
+            <field name="LIGHT">BLUE</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_forward" id="114">
             <next>
-              <block type="controls_if" id="38" inline="false">
+              <block type="controls_if" id="7" inline="false">
                 <value name="IF0">
-                  <block type="sensor_object" id="61">
-                    <field name="OBJECT">RIGHTFRONT</field>
+                  <block type="sensor_object" id="14">
+                    <field name="OBJECT">LEFTFRONT</field>
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="movement_reverse" id="95">
+                  <block type="movement_reverse" id="92">
                     <next>
-                      <block type="movement_left" id="71">
+                      <block type="movement_right" id="24">
                         <next>
-                          <block type="robot_delay" id="81" inline="true">
+                          <block type="robot_delay" id="73" inline="true">
                             <value name="DELAY">
-                              <block type="math_number" id="82">
+                              <block type="math_number" id="80">
                                 <field name="NUM">100</field>
                               </block>
                             </value>
@@ -56,10 +34,36 @@
                     </next>
                   </block>
                 </statement>
+                <next>
+                  <block type="controls_if" id="38" inline="false">
+                    <value name="IF0">
+                      <block type="sensor_object" id="61">
+                        <field name="OBJECT">RIGHTFRONT</field>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="movement_reverse" id="95">
+                        <next>
+                          <block type="movement_left" id="71">
+                            <next>
+                              <block type="robot_delay" id="81" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="82">
+                                    <field name="NUM">100</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
-        </next>
+        </statement>
       </block>
     </statement>
   </block>
