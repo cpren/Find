@@ -1,36 +1,24 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="628" inline="false" x="-913" y="-1007">
-    <value name="IF0">
-      <block type="sensor_button" id="621">
-        <field name="OBJECT">UP</field>
+  <block type="controls_whileUntil" id="1618" inline="false" x="-902" y="-1049">
+    <field name="MODE">WHILE</field>
+    <value name="NUMBER">
+      <block type="math_number" id="1625">
+        <field name="NUM">1</field>
       </block>
     </value>
-    <statement name="DO0">
-      <block type="movement_forward" id="638">
-        <next>
-          <block type="robot_delay" id="1153" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="1154">
-                <field name="NUM">1000</field>
-              </block>
-            </value>
-          </block>
-        </next>
-      </block>
-    </statement>
-    <next>
-      <block type="controls_if" id="1246" inline="false">
+    <statement name="DO">
+      <block type="controls_if" id="628" inline="false">
         <value name="IF0">
-          <block type="sensor_button" id="1247">
-            <field name="OBJECT">DOWN</field>
+          <block type="sensor_button" id="621">
+            <field name="OBJECT">UP</field>
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_reverse" id="1261">
+          <block type="movement_forward" id="638">
             <next>
-              <block type="robot_delay" id="1249" inline="true">
+              <block type="robot_delay" id="1153" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="1250">
+                  <block type="math_number" id="1154">
                     <field name="NUM">1000</field>
                   </block>
                 </value>
@@ -39,18 +27,18 @@
           </block>
         </statement>
         <next>
-          <block type="controls_if" id="1345" inline="false">
+          <block type="controls_if" id="1246" inline="false">
             <value name="IF0">
-              <block type="sensor_button" id="1346">
-                <field name="OBJECT">LEFT</field>
+              <block type="sensor_button" id="1247">
+                <field name="OBJECT">DOWN</field>
               </block>
             </value>
             <statement name="DO0">
-              <block type="movement_left" id="1360">
+              <block type="movement_reverse" id="1261">
                 <next>
-                  <block type="robot_delay" id="1348" inline="true">
+                  <block type="robot_delay" id="1249" inline="true">
                     <value name="DELAY">
-                      <block type="math_number" id="1349">
+                      <block type="math_number" id="1250">
                         <field name="NUM">1000</field>
                       </block>
                     </value>
@@ -59,18 +47,18 @@
               </block>
             </statement>
             <next>
-              <block type="controls_if" id="1371" inline="false">
+              <block type="controls_if" id="1345" inline="false">
                 <value name="IF0">
-                  <block type="sensor_button" id="1372">
-                    <field name="OBJECT">RIGHT</field>
+                  <block type="sensor_button" id="1346">
+                    <field name="OBJECT">LEFT</field>
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="movement_right" id="1386">
+                  <block type="movement_left" id="1360">
                     <next>
-                      <block type="robot_delay" id="1374" inline="true">
+                      <block type="robot_delay" id="1348" inline="true">
                         <value name="DELAY">
-                          <block type="math_number" id="1375">
+                          <block type="math_number" id="1349">
                             <field name="NUM">1000</field>
                           </block>
                         </value>
@@ -78,11 +66,33 @@
                     </next>
                   </block>
                 </statement>
+                <next>
+                  <block type="controls_if" id="1371" inline="false">
+                    <value name="IF0">
+                      <block type="sensor_button" id="1372">
+                        <field name="OBJECT">RIGHT</field>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="movement_right" id="1386">
+                        <next>
+                          <block type="robot_delay" id="1374" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="1375">
+                                <field name="NUM">1000</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
