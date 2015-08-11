@@ -1,9 +1,9 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="198" inline="false" x="-101" y="-651">
-    <field name="MODE">UNTIL</field>
+  <block type="controls_whileUntil" id="198" inline="false" x="-115" y="-497">
+    <field name="MODE">WHILE</field>
     <value name="NUMBER">
       <block type="sensor_spectrometer" id="205">
-        <field name="LIGHT">GREEN</field>
+        <field name="LIGHT">BLUE</field>
       </block>
     </value>
     <statement name="DO">
@@ -100,8 +100,22 @@
     <next>
       <block type="oled_cleardisplay" id="422">
         <next>
-          <block type="oled_drawtext" id="405">
-            <field name="TEXT">Found</field>
+          <block type="oled_setcursor" id="431" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="438">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <value name="STARTY">
+              <block type="math_number" id="445">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <next>
+              <block type="oled_drawtext" id="405">
+                <field name="TEXT">Found</field>
+              </block>
+            </next>
           </block>
         </next>
       </block>
