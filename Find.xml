@@ -1,37 +1,59 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="342" x="-19" y="58">
-    <next>
-      <block type="controls_whileUntil" id="198" inline="false">
-        <field name="MODE">UNTIL</field>
-        <value name="NUMBER">
-          <block type="sensor_spectrometer" id="205">
-            <field name="LIGHT">BLUE</field>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="movement_forward" id="330">
+  <block type="controls_whileUntil" id="198" inline="false" x="-72" y="2">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_spectrometer" id="205">
+        <field name="LIGHT">BLUE</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="330">
+        <next>
+          <block type="robot_delay" id="332" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="333">
+                <field name="NUM">100</field>
+              </block>
+            </value>
             <next>
-              <block type="robot_delay" id="332" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="333">
-                    <field name="NUM">100</field>
+              <block type="controls_if" id="236" inline="false">
+                <value name="IF0">
+                  <block type="sensor_object" id="221">
+                    <field name="OBJECT">LEFTFRONT</field>
                   </block>
                 </value>
+                <statement name="DO0">
+                  <block type="movement_reverse" id="262">
+                    <next>
+                      <block type="movement_right" id="282">
+                        <next>
+                          <block type="robot_delay" id="311" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="319">
+                                <field name="NUM">1000</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
                 <next>
-                  <block type="controls_if" id="236" inline="false">
+                  <block type="controls_if" id="252" inline="false">
                     <value name="IF0">
-                      <block type="sensor_object" id="221">
-                        <field name="OBJECT">LEFTFRONT</field>
+                      <block type="sensor_object" id="228">
+                        <field name="OBJECT">RIGHTFRONT</field>
                       </block>
                     </value>
                     <statement name="DO0">
-                      <block type="movement_reverse" id="262">
+                      <block type="movement_reverse" id="272">
                         <next>
-                          <block type="movement_right" id="282">
+                          <block type="movement_left" id="309">
                             <next>
-                              <block type="robot_delay" id="311" inline="true">
+                              <block type="robot_delay" id="312" inline="true">
                                 <value name="DELAY">
-                                  <block type="math_number" id="319">
+                                  <block type="math_number" id="320">
                                     <field name="NUM">1000</field>
                                   </block>
                                 </value>
@@ -41,39 +63,13 @@
                         </next>
                       </block>
                     </statement>
-                    <next>
-                      <block type="controls_if" id="252" inline="false">
-                        <value name="IF0">
-                          <block type="sensor_object" id="228">
-                            <field name="OBJECT">RIGHTFRONT</field>
-                          </block>
-                        </value>
-                        <statement name="DO0">
-                          <block type="movement_reverse" id="272">
-                            <next>
-                              <block type="movement_left" id="309">
-                                <next>
-                                  <block type="robot_delay" id="312" inline="true">
-                                    <value name="DELAY">
-                                      <block type="math_number" id="320">
-                                        <field name="NUM">1000</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </statement>
-                      </block>
-                    </next>
                   </block>
                 </next>
               </block>
             </next>
           </block>
-        </statement>
+        </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
