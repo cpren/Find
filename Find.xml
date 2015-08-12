@@ -29,12 +29,16 @@
             <next>
               <block type="movement_left" id="1753">
                 <next>
-                  <block type="robot_delay" id="1739" inline="true">
-                    <value name="DELAY">
-                      <block type="variables_get" id="1743">
-                        <field name="VAR">size</field>
+                  <block type="movement_forward" id="2129">
+                    <next>
+                      <block type="robot_delay" id="1739" inline="true">
+                        <value name="DELAY">
+                          <block type="variables_get" id="1743">
+                            <field name="VAR">size</field>
+                          </block>
+                        </value>
                       </block>
-                    </value>
+                    </next>
                   </block>
                 </next>
               </block>
