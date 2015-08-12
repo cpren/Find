@@ -14,7 +14,7 @@
             <field name="OP">MULTIPLY</field>
             <value name="A">
               <block type="math_number" id="1846">
-                <field name="NUM">10</field>
+                <field name="NUM">100</field>
               </block>
             </value>
             <value name="B">
