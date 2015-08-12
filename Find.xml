@@ -23,9 +23,6 @@
                     <field name="NUM">1000</field>
                   </block>
                 </value>
-                <next>
-                  <block type="movement_stop" id="1667"></block>
-                </next>
               </block>
             </next>
           </block>
@@ -47,9 +44,6 @@
                         <field name="NUM">1000</field>
                       </block>
                     </value>
-                    <next>
-                      <block type="movement_stop" id="1666"></block>
-                    </next>
                   </block>
                 </next>
               </block>
@@ -71,9 +65,6 @@
                             <field name="NUM">1000</field>
                           </block>
                         </value>
-                        <next>
-                          <block type="movement_stop" id="1665"></block>
-                        </next>
                       </block>
                     </next>
                   </block>
@@ -95,9 +86,6 @@
                                 <field name="NUM">1000</field>
                               </block>
                             </value>
-                            <next>
-                              <block type="movement_stop" id="1664"></block>
-                            </next>
                           </block>
                         </next>
                       </block>
