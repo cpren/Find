@@ -27,9 +27,9 @@
         <next>
           <block type="movement_forward" id="1734">
             <next>
-              <block type="movement_left" id="1753">
+              <block type="movement_forward" id="2129">
                 <next>
-                  <block type="movement_forward" id="2129">
+                  <block type="movement_left" id="1753">
                     <next>
                       <block type="robot_delay" id="1739" inline="true">
                         <value name="DELAY">
