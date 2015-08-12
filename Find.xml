@@ -27,10 +27,10 @@
         <next>
           <block type="movement_forward" id="1734">
             <next>
-              <block type="robot_delay" id="2130" inline="true">
+              <block type="robot_delay" id="2133" inline="true">
                 <value name="DELAY">
-                  <block type="variables_get" id="2131">
-                    <field name="VAR">size</field>
+                  <block type="math_number" id="2140">
+                    <field name="NUM">10</field>
                   </block>
                 </value>
                 <next>
