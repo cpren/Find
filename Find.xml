@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="131" x="-831" y="-830">
+  <block type="oled_cleardisplay" id="131" x="-822" y="-859">
     <next>
       <block type="movement_forward" id="383">
         <next>
