@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="1" inline="true" x="-871" y="-1354">
+  <block type="variables_set" id="1" inline="true" x="-874" y="-1359">
     <field name="VAR">size</field>
     <value name="VALUE">
       <block type="math_number" id="2">
