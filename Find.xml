@@ -68,13 +68,14 @@
                                                       </block>
                                                     </value>
                                                     <next>
-                                                      <block type="controls_if" id="22" inline="false">
-                                                        <value name="IF0">
+                                                      <block type="controls_whileUntil" id="89" inline="false">
+                                                        <field name="MODE">WHILE</field>
+                                                        <value name="NUMBER">
                                                           <block type="sensor_button" id="23">
                                                             <field name="OBJECT">UP</field>
                                                           </block>
                                                         </value>
-                                                        <statement name="DO0">
+                                                        <statement name="DO">
                                                           <block type="oled_cleardisplay" id="24">
                                                             <next>
                                                               <block type="movement_reverse" id="25">
