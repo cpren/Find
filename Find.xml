@@ -1,50 +1,37 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="1641" inline="false" x="-889" y="-1334">
-    <field name="MODE">WHILE</field>
-    <value name="NUMBER">
-      <block type="math_number" id="1648">
-        <field name="NUM">1</field>
+  <block type="variables_set" id="3" inline="true" x="-871" y="-1354">
+    <field name="VAR">size</field>
+    <value name="VALUE">
+      <block type="math_number" id="23">
+        <field name="NUM">1100</field>
       </block>
     </value>
-    <statement name="DO">
-      <block type="variables_set" id="1669" inline="true">
-        <field name="VAR">size</field>
-        <value name="VALUE">
-          <block type="math_arithmetic" id="1798" inline="true">
-            <field name="OP">MULTIPLY</field>
-            <value name="A">
-              <block type="math_number" id="1846">
-                <field name="NUM">100</field>
-              </block>
-            </value>
-            <value name="B">
-              <block type="math_number" id="1853">
-                <field name="NUM">14</field>
-              </block>
-            </value>
+    <next>
+      <block type="controls_whileUntil" id="1" inline="false">
+        <field name="MODE">WHILE</field>
+        <value name="NUMBER">
+          <block type="math_number" id="2">
+            <field name="NUM">1</field>
           </block>
         </value>
-        <next>
-          <block type="movement_forward" id="1734">
+        <statement name="DO">
+          <block type="movement_forward" id="7">
             <next>
-              <block type="robot_delay" id="2133" inline="true">
+              <block type="robot_delay" id="8" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="2140">
+                  <block type="math_number" id="9">
                     <field name="NUM">1000</field>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_left" id="1753">
+                  <block type="movement_left" id="10">
                     <next>
-                      <block type="robot_delay" id="1739" inline="true">
+                      <block type="robot_delay" id="11" inline="true">
                         <value name="DELAY">
-                          <block type="variables_get" id="1743">
+                          <block type="variables_get" id="12">
                             <field name="VAR">size</field>
                           </block>
                         </value>
-                        <next>
-                          <block type="movement_forward" id="2129"></block>
-                        </next>
                       </block>
                     </next>
                   </block>
@@ -52,8 +39,8 @@
               </block>
             </next>
           </block>
-        </next>
+        </statement>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
