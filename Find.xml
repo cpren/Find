@@ -69,20 +69,10 @@
                                                     </value>
                                                     <next>
                                                       <block type="controls_whileUntil" id="67" inline="false">
-                                                        <field name="MODE">UNTIL</field>
+                                                        <field name="MODE">WHILE</field>
                                                         <value name="NUMBER">
-                                                          <block type="logic_operation" id="74" inline="true">
-                                                            <field name="OP">LOR</field>
-                                                            <value name="A">
-                                                              <block type="sensor_button" id="81">
-                                                                <field name="OBJECT">UP</field>
-                                                              </block>
-                                                            </value>
-                                                            <value name="B">
-                                                              <block type="sensor_button" id="88">
-                                                                <field name="OBJECT">DOWN</field>
-                                                              </block>
-                                                            </value>
+                                                          <block type="math_number" id="95">
+                                                            <field name="NUM">1</field>
                                                           </block>
                                                         </value>
                                                         <statement name="DO">
