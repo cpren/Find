@@ -264,16 +264,32 @@
                                                                                   </block>
                                                                                 </statement>
                                                                                 <next>
-                                                                                  <block type="movement_right" id="141">
+                                                                                  <block type="oled_cleardisplay" id="190">
                                                                                     <next>
-                                                                                      <block type="robot_delay" id="180" inline="true">
-                                                                                        <value name="DELAY">
-                                                                                          <block type="math_number" id="181">
-                                                                                            <field name="NUM">100</field>
-                                                                                          </block>
-                                                                                        </value>
+                                                                                      <block type="oled_drawtext" id="200">
+                                                                                        <field name="TEXT">Help is on it's way</field>
                                                                                         <next>
-                                                                                          <block type="movement_stop" id="169"></block>
+                                                                                          <block type="robot_delay" id="220" inline="true">
+                                                                                            <value name="DELAY">
+                                                                                              <block type="math_number" id="221">
+                                                                                                <field name="NUM">1000</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <next>
+                                                                                              <block type="oled_setcursor" id="215" inline="true">
+                                                                                                <value name="STARTX">
+                                                                                                  <block type="math_number" id="217">
+                                                                                                    <field name="NUM">5</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <value name="STARTY">
+                                                                                                  <block type="math_number" id="218">
+                                                                                                    <field name="NUM">20</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
                                                                                         </next>
                                                                                       </block>
                                                                                     </next>
