@@ -290,6 +290,9 @@
                                                                                                         </next>
                                                                                                       </block>
                                                                                                     </statement>
+                                                                                                    <next>
+                                                                                                      <block type="oled_cleardisplay" id="241"></block>
+                                                                                                    </next>
                                                                                                   </block>
                                                                                                 </next>
                                                                                               </block>
