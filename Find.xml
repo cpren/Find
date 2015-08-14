@@ -35,7 +35,7 @@
                                   <block type="oled_setcursor" id="12" inline="true">
                                     <value name="STARTX">
                                       <block type="math_number" id="13">
-                                        <field name="NUM">10</field>
+                                        <field name="NUM">2</field>
                                       </block>
                                     </value>
                                     <value name="STARTY">
