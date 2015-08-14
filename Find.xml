@@ -47,7 +47,7 @@
                                       <block type="oled_cleardisplay" id="15">
                                         <next>
                                           <block type="oled_drawtext" id="16">
-                                            <field name="TEXT">Yes (up) or No (down)</field>
+                                            <field name="TEXT">Yes(up) or No(down)</field>
                                             <next>
                                               <block type="robot_delay" id="17" inline="true">
                                                 <value name="DELAY">
@@ -143,7 +143,7 @@
                                                                       <block type="oled_cleardisplay" id="131">
                                                                         <next>
                                                                           <block type="oled_drawtext" id="200">
-                                                                            <field name="TEXT">Help is on it's way</field>
+                                                                            <field name="TEXT">Help is on it's way!</field>
                                                                             <next>
                                                                               <block type="robot_delay" id="220" inline="true">
                                                                                 <value name="DELAY">
